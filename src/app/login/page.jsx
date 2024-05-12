@@ -3,7 +3,7 @@ import Link from "next/link"
 import {useRouter} from 'next/navigation'  //lec 08
 const login =() => {
 
-    const router = useRouter()
+    const router = useRouter();
     return(
         <>
         <div>
@@ -13,6 +13,10 @@ const login =() => {
             <br />
             <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/")}>Go to main page</button>
 
+            <div className="flex flex-row justify-center gap-4 bg-slate-300 rounded-2xl mt-4">
+    <button className="hover:scale-105" onClick={()=>router.push("/login/loginstd")}>Go to student login page</button>
+    <button className="hover:scale-90" onClick={()=>router.push("/login/logintech")}>Go to teacher login page</button>
+</div>
         </div>
         </>
     )
