@@ -1,7 +1,7 @@
 "use client";
-
+import Link from "next/link";  //lec08
 import { useState } from "react";
-
+import {useRouter} from 'next/navigation'  //lec 08
 export default function Home() {
   // State
   const [state, setState] = useState("Abiha");
@@ -16,6 +16,9 @@ export default function Home() {
     <h1>This is INNER COMPONENT</h1>
     )
   }
+//lec 08
+  const  router = useRouter()
+
   // Function
   // const banana=()=>{
   //   alert("Are you want banana shake")
@@ -33,11 +36,19 @@ export default function Home() {
 
       <button
         onClick={banana}
-        className="bg-black px-2 py-1 text-white rounded-lg"
+        className="bg-black px-2 py-1 text-white rounded-lg hover:scale-75 duration-700 hover:font-bold"
       >
         Click me
       </button>
       <Innercomp />
+
+      <Link href="/login" className="mb-5 mt-5">Go to login page</Link>
+      <Link href="/about">Go to about page</Link>
+<div className="flex flex-row gap-2">
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/login")}> Go to login page</button>
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/about")}>Go To About</button>
+      
+</div>
     </main>
   );
 }
