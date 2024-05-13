@@ -47,7 +47,9 @@ export default function Home() {
 <div className="flex flex-row gap-2">
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/login")}> Go to login page</button>
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/about")}>Go To About</button>
-      
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/studentlist")}>Go To Student List</button>
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/study")}>All Lectures</button>
+
 </div>
     </main>
   );
