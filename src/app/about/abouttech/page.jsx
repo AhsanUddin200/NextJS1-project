@@ -4,7 +4,7 @@ const abouttech = () => {
   return (
     <>
     <div>
-        <h3>This section is for the teacher</h3>
+        <h3 className='font-bold text-center text-2xl  rounded-sm mt-4'>This section is for the teacher</h3>
     </div>
     </>
   )

@@ -5,7 +5,7 @@ const logintech = () => {
   return (
     <>
     <div>
-    <h4>This section is for the login Teacher</h4>
+    <h4 className='font bold text-2xl'>This section is for the login Teacher</h4>
 
 
  <Link href="/login">Go to main Login</Link>
