@@ -49,6 +49,8 @@ export default function Home() {
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/about")}>Go To About</button>
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/studentlist")}>Go To Student List</button>
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/study")}>All Lectures</button>
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/Productlist")}>All Product list</button>
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/itemlist")}>All Items list</button>
 
 </div>
     </main>
