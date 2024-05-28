@@ -9,6 +9,8 @@ const page = () => {
 
       <div>
         <Link href="/">Go to main page</Link>
+        </div><div>
+        <Link href="/">Go to main page</Link>
         </div>
     </div>
   )

@@ -54,7 +54,7 @@ export default function Home() {
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/image")}>Click here for image</button>
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/font")}>Click here for check font</button>
       <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/metadata")}>About Meta data</button>
-
+      <button className="bg-slate-300 rounded-lg hover:scale-95 hover:font-bold p-2" onClick={()=>router.push("/script")}>Script Component</button>
 </div>
     </main>
   );
